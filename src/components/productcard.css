@@ -1,0 +1,118 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.image-container {
+  overflow: hidden;
+  height: 250px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain; 
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.add-to-cart {
+  margin-top: 15px;
+  padding: 10px 15px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 50px;
+}
+
+.add-to-cart:hover {
+  background-color: #444;
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.price-badge {
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-weight: 800;
+  color: #000; 
+  margin-bottom: 10px;
+}
+
+.skeleton-card {
+  height: 250px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  animation: skeleton-loading 1s infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: #f0f0f0;
+  }
+  100% {
+    background-color: #e0e0e0;
+  }
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.stars-outer {
+  position: relative;
+  display: inline-block;
+  font-family: FontAwesome;
+}
+
+.stars-outer::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #ccc;
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.stars-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: black;
+}
+
+.rating-count {
+  font-size: 0.9rem;
+  margin-left: 10px;
+  color: #666;
+}
