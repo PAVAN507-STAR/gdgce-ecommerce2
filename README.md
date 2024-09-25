@@ -11,6 +11,15 @@ This project is a simple eCommerce website built to provide an online platform f
 - Toast notifications 
 - Responsive design
 
+- ![image](https://github.com/user-attachments/assets/6c242518-8ffc-4844-9c60-928d997a5614)
+- ![image](https://github.com/user-attachments/assets/531a3e7b-dbfa-4f0f-b88b-dd63c6670c58)
+- ![image](https://github.com/user-attachments/assets/1159587d-7584-45e0-b8ce-3e74c426fd48)
+-![image](https://github.com/user-attachments/assets/084a1d83-0f4d-457d-b769-5fde29a2290f)
+
+
+
+
+
 ## Prerequisites
 
 Before running this project, ensure you have the following installed on your machine:
